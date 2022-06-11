@@ -1,94 +1,48 @@
 :root {
     --title-color: #212121;
-    --lighter-text-color: rgba(157, 164, 189, 0.6);
+    --ligther-text-color: rgba(157,164,189,0.6);
     --accent-color: #2196F3;
-    --white: #fffffff;
+    --white: #FFFFFF;
 }
-
-body {
-    font-family: "Roboto,  'Open Sans',  sans-serif";
+body{
+    width: 1600px;
+    background: var(--white);
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto, 'Open Sans', sans-serif";
     color: black;
-    background: #E5E5E5;
-    width: 1600px;
-    height: 2349px;
-    position: relative;
 }
 
-ul{
-    list-style: none;
-}
-
-/*Шапка*/
-.header {
-    width: 1600px;
+/*ШАПКА*/
+.header{
     height: 80px;
-    left: 0%;
-    top: 0%;
-    background-color: var(--white);
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
 }
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1, 19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    text-decoration: none;
-}
-.logo-accent {
-    color: var(--title-color);
-}
-.logo {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
+.menu{
+    width: 294px;
+    height: 16px;
 
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-        /* identical to box height */
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
 }
-.logo-accent {
-    color: var(--title-color);
-}
-
-.menu {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    border-collapse: collapse;
-}
-
-.menu .one{
-    position: absolute;
+.menu .one {
     width: 49px;
     height: 16px;
-    left: 453px;
-    top: 32px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
     text-decoration: none;
+    margin-left: 93px;
+}
+.menu a:hover{
+    color: var(--accent-color);
 }
 .menu .two {
-    position: absolute;
     width: 77px;
     height: 16px;
     left: 552px;
     top: 32px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -96,13 +50,11 @@ ul{
     color: var(--title-color);
     text-decoration: none;
 }
-.menu .three {
-    position: absolute;
+.menu .three{
     width: 68px;
     height: 16px;
     left: 679px;
     top: 32px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -110,27 +62,23 @@ ul{
     color: var(--title-color);
     text-decoration: none;
 }
-.menu .four{
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
-    font-style: normal;
+.info {
+    margin-right: 215px;
+}
+ .header .info .mail{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
     text-decoration: none;
+    margin-right: 50px;
+    color: var(--title-color);
 }
-.menu .five{
-    position: absolute;
+.header .info .tel{
     width: 122px;
     height: 16px;
     left: 1263px;
     top: 32px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -138,24 +86,72 @@ ul{
     color: #757575;
     text-decoration: none;
 }
-/*тело*/
-
-.section-hero{
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    background: #2F303A;
+.header .info a:hover {
+    color: var(--accent-color);
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.bisnes {
-    position: absolute;
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-left: 215px;
+}
+
+.logo-accent {
+    color: var(--title-color);
+}
+
+.logo {
+    width: 145px;
+    height: 31px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-accent {
+    color: var(--title-color);
+}
+/*Тело*/
+.hero{
+    height: 600px;
+    background-color: #2F303A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero .one{
+    color: var(--white);
     width: 696px;
     height: 120px;
     left: 452px;
     top: 280px;
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -163,57 +159,36 @@ ul{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 .button{
-    color: var(--white);
-    background-color: var(--accent-color);
-    position: absolute;
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-}
-.section-advantages {
-    position: absolute;
-    width: 1170px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
-}
-.section-advantages > .advantages-primary{
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
-}
-.section-advantages > .advantages-secondary{
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 515px;
-    top: 774px;
-}
-.section-advantages > .advantages-tertiary{
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 815px;
-    top: 774px;
-}
-.section-advantages > .advantages-quaternary{
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 1115px;
-    top: 774px;
-}
+    cursor: pointer;
 
-.block-one {
-    font-style: normal;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    padding: 94px 0;
+    
+
+}
+.text ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+.text .zero {
+    color: #E5E5E5;
+}
+.text .read{
+    width: 270px;
+    height: 101px;
+}
+.textick {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -221,71 +196,48 @@ ul{
     text-transform: uppercase;
     color: var(--title-color);
 }
-.block-two {
-    font-style: normal;
-    font-weight: 400;
+.textickk {
     font-size: 14px;
     line-height: 24px;
+        /* or 171% */
     letter-spacing: 0.03em;
     color: #757575;
 }
-
-.section-work {
-     position: absolute;
-     width: 1600px;
-     height: 648px;
-     left: 0px;
-     top: 1449px;
-     background: #F5F4FA;
-}
-.work {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-}
-.page {
-    position: absolute;
-    width: 1170px;
+.work{
     height: 386px;
     left: 215px;
     top: 969px;
 }
-.page .one {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1061px;
+.work ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
 }
-.page .two {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 615px;
-    top: 1061px;
+.work .zero{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+
 }
-.page .three {
-    position: absolute;
+.work .item{
     width: 370px;
     height: 294px;
-    left: 1015px;
-    top: 1061px;
 }
 
-.section-comand {
-    position: absolute;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1449px;
+.people{
     background: #F5F4FA;
+    margin: auto;
 }
-.comand {
-    font-style: normal;
+
+.people .one {
+    /*width: 264px;*/
+    height: 42px;
+    left: 668px;
+    top: 1543px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -293,61 +245,41 @@ ul{
     letter-spacing: 0.03em;
     color: var(--title-color);
 }
-.comand .one {
-        position: absolute;
-        width: 270px;
-        height: 368px;
-        left: 215px;
-        top: 1635px;
-        background: #FFFFFF;
-        /* material shadow v1 */
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-}
-.comand .two {
-    position: absolute;
+.people .person {
     width: 270px;
     height: 368px;
-    left: 515px;
-    top: 1635px;
-    background: #FFFFFF;
-    /* material shadow v1 */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-.comand .three {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 815px;
-    top: 1635px;
-    background: #FFFFFF;
-    /* material shadow v1 */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-.comand .four {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 1115px;
-    top: 1635px;
-    background: #FFFFFF;
-    /* material shadow v1 */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
+    padding: 15px;
 
-/*подвал*/
+
+
+}
 .footer {
-    position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
+.footer a{
+    text-decoration: none;
+}
+.comand {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .footer-menu {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+}
+
+.footer-menu .adress {
+font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -355,52 +287,20 @@ ul{
     letter-spacing: 0.03em;
     color: var(--white);
 }
-.footer-menu .one{
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2208px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--white);
-    text-decoration: none;
 
-}
-
-.footer-menu .two{
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2238px;
+.footer-menu .mail {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
 }
-
-.footer-menu .three{
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2268px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-}
-
 .logo-accent-one {
     color: white;
+}
+
+.link{
+    margin: 0;
 }
