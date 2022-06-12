@@ -9,7 +9,7 @@ body{
     background: var(--white);
     font-style: normal;
     font-weight: 400;
-    font-family: "Roboto, 'Open Sans', sans-serif";
+    font-family: "Roboto", sans-serif;
     color: black;
 }
 
@@ -23,9 +23,12 @@ body{
 .menu{
     width: 294px;
     height: 16px;
-
 }
-.menu .one {
+.menu a{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.menu .studio{
     width: 49px;
     height: 16px;
     font-weight: 500;
@@ -38,7 +41,7 @@ body{
 .menu a:hover{
     color: var(--accent-color);
 }
-.menu .two {
+.menu .portfolio{
     width: 77px;
     height: 16px;
     left: 552px;
@@ -50,7 +53,7 @@ body{
     color: var(--title-color);
     text-decoration: none;
 }
-.menu .three{
+.menu .contackt{
     width: 68px;
     height: 16px;
     left: 679px;
@@ -72,7 +75,7 @@ body{
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-right: 50px;
-    color: var(--title-color);
+    color: var(--ligther-text-color);
 }
 .header .info .tel{
     width: 122px;
@@ -83,7 +86,7 @@ body{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--ligther-text-color);
     text-decoration: none;
 }
 .header .info a:hover {
@@ -93,9 +96,9 @@ ul{
     list-style: none;
     padding: 0;
 }
-*{
+/**{
     box-sizing: border-box;
-}
+}*/
 .center {
     display: flex;
     justify-content: center;
@@ -167,7 +170,8 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-
+    color: var(--white);
+    font-weight: 700;
 }
 .text{
     display: flex;
@@ -212,7 +216,7 @@ ul{
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    margin: 0 auto;
+    margin: auto;
 }
 .work .zero{
     font-weight: 700;
@@ -233,26 +237,35 @@ ul{
     margin: auto;
 }
 
-.people .one {
-    /*width: 264px;*/
+.people .comand  {
     height: 42px;
-    left: 668px;
-    top: 1543px;
     font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    padding-top: 90px;
+    padding-bottom: 50px;
+    font-style: normal;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
 }
-.people .person {
+.person {
     width: 270px;
     height: 368px;
-    padding: 15px;
-
-
-
+    margin: 15px;
+    background-color: var(--white);
 }
+.person h3{
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+.person p{
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+/*Подвал*/
 .footer {
     padding-top: 60px;
     padding-left: 215px;
@@ -262,15 +275,7 @@ ul{
 .footer a{
     text-decoration: none;
 }
-.comand {
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+
 .footer-menu {
     font-size: 14px;
     line-height: 24px;
@@ -279,7 +284,6 @@ ul{
 }
 
 .footer-menu .adress {
-font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -289,7 +293,6 @@ font-family: 'Roboto';
 }
 
 .footer-menu .mail {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -303,4 +306,56 @@ font-family: 'Roboto';
 
 .link{
     margin: 0;
+}
+/*ПОРТФОЛИО*/
+.section-portfolio{
+    margin: auto;
+    padding-left: 215px;
+    background-color: var(--white);
+    justify-content: center;
+}
+.title {
+    color: pink;
+    display: none;
+}
+.button-title {
+    width: 611px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.button-title li{
+  padding-left: 10px;
+  margin: auto;
+  display: inline-flex;  
+}
+
+.box {
+   justify-content: space-around;
+   margin: auto;
+
+}
+.project{
+    width: 370px;
+    height: 404px;
+    margin: auto;
+    display: inline-table;
+    
+}
+.box h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+        /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+}
+.box p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+        /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: #757575;
 }
