@@ -113,7 +113,7 @@ ul{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 19;
+    line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
@@ -324,9 +324,7 @@ ul{
     justify-content: center;
     padding-top: 25px;
 }
-.button-title button{
-    border-color: none;
-}
+
 .button-title a:hover{
         color: var(--accent-color);
 }
