@@ -314,11 +314,15 @@ ul{
     margin: 0;
 }
 /*ПОРТФОЛИО*/
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .section-portfolio{
     margin: auto;
     padding-left: 215px;
     background-color: var(--white);
     justify-content: center;
+    padding-top: 25px;
 }
 .button-title button{
     border-color: none;
@@ -327,7 +331,6 @@ ul{
         color: var(--accent-color);
 }
 .title {
-    color: pink;
     display: none;
 }
 
@@ -422,6 +425,7 @@ ul{
 .box {
    justify-content: space-around;
    margin: auto;
+   padding-bottom: 50px;
 
 }
 .project{
