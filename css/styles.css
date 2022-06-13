@@ -427,9 +427,9 @@ ul{
 .project{
     width: 370px;
     height: 404px;
-    margin: auto;
     display: inline-table;
-    padding: 15px;
+    margin: 15px;
+    border: 1px solid #EEEEEE;;
     
 }
 .box h2{
@@ -438,6 +438,8 @@ ul{
     line-height: 36px;
         /* identical to box height, or 200% */
     letter-spacing: 0.06em;
+    padding-left: 25px;
+
 }
 .box p{
     font-weight: 400;
@@ -446,4 +448,5 @@ ul{
         /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: #757575;
+    padding-left: 25px;
 }
