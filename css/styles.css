@@ -49,7 +49,7 @@ li{
 .black:focus,.gray:focus {
     color: #2196F3;
 }
-.black.current{
+.current{
     color: #2196F3;
 }
 /*-------------------main-------------*/
